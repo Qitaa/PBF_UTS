@@ -13,7 +13,7 @@ export default function VechicleEdit() {
   useEffect(() => {
     const res = async () => {
       try {
-        let response = await axios.get(`http://localhost:3001/kendaraan/${id}`)
+        let response = await axios.get(`http://localhost:3001/unit/${id}`)
         setVehicles(response.data)
         console.log(response.data)
       } catch (error) {
@@ -26,7 +26,7 @@ export default function VechicleEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const edit = await axios.put(`http://localhost:3001/kendaraan/${id}`, vehicles)
+      const edit = await axios.put(`http://localhost:3001/unit/${id}`, vehicles)
       if (edit.status === 200) {
         navigate('/vehicles')
       }
@@ -37,7 +37,7 @@ export default function VechicleEdit() {
   return (
     <div>
       <Link to='/vehicles' className='mb-3 btn'> Kembali</Link>
-      <p className='mb-4 text-2xl font-semibold'>Update Vehicles</p>
+      <p className='mb-4 text-2xl font-semibold'>Update Unit</p>
       <div className="w-full max-w-xs mb-4 form-control">
         <label className="label">
           <span className="label-text">Name</span>

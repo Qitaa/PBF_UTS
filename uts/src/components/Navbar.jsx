@@ -15,15 +15,15 @@ export default function Navbar() {
             <ul tabIndex={0} className="p-5 mt-5 shadow menu menu-compact dropdown-content bg-base-30 rounded-box w-40">
               <li><Link to='/brands'>Brand</Link></li>
               <li><Link to='/categories'>Category</Link></li>
-              <li><Link to='/banks'>Bank</Link></li>
               <li>
-                <Link to="/vehicles">Vehicle</Link>
+                <Link to="/vehicles">Unit Ready</Link>
               </li>
+              <li><Link to='/banks'>Dartar Rekening</Link></li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
-          <Link to={'/'} className="text-xl big-case btn btn-ghost">Shop Cars</Link>
+          <Link to={'/'} className="text-xl big-case btn btn-ghost">QitaTronic Store</Link>
         </div>
         <div className="navbar-end">
           {/* <button className="btn btn-ghost btn-circle">

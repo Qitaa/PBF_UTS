@@ -19,7 +19,7 @@ export default function VechicleCreate() {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault()
-      const vehicle = await axios.post('http://localhost:3001/kendaraan', form)
+      const vehicle = await axios.post('http://localhost:3001/unit', form)
       if (vehicle.status === 201) {
         navigate('/vehicles')
       }
@@ -30,7 +30,7 @@ export default function VechicleCreate() {
   return (
     <div>
       <Link to='/vehicles' className='mb-3 btn'> Kembali</Link>
-      <p className='mb-4 text-2xl font-semibold'>Create Vehicles</p>
+      <p className='mb-4 text-2xl font-semibold'>Create Unit</p>
       <div className="w-full max-w-xs mb-4 form-control">
         <label className="label">
           <span className="label-text">Name</span>

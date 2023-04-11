@@ -1,46 +1,78 @@
 {
   "brand": [
     {
-      "id": 2,
-      "name": "Yamaha"
+      "name": "Huawei",
+      "id": 1
     },
     {
-      "id": 3,
-      "name": "Suzuki"
+      "name": "1+",
+      "id": 2
     },
     {
-      "name": "Testing",
+      "name": "Xiaomi",
+      "id": 3
+    },
+    {
+      "name": "Iphone",
       "id": 4
     },
     {
-      "name": "fcvgbhnj",
+      "name": "Asus",
       "id": 5
     },
     {
-      "name": "23456789gh",
+      "name": "Samsung",
       "id": 6
     }
   ],
   "category": [
     {
-      "id": 1,
-      "name": "Motor"
+      "name": "Tab",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Mobil"
+      "name": "Android",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Truk"
+      "name": "Iphone",
+      "id": 3
+    },
+    {
+      "name": "Laptop",
+      "id": 4
     }
   ],
-  "kendaraan": [
+  "unit": [
     {
-      "name": "tfegfdwg",
-      "color": "buji",
-      "price": "256789",
+      "name": "iphone 11",
+      "color": "ungu",
+      "price": "6000000",
       "id": 1
+    },
+    {
+      "name": "Huawei Nova 5T",
+      "color": "Green",
+      "price": "4000000",
+      "id": 2
+    },
+    {
+      "name": "Xiaomi Mi 12",
+      "color": "Purple",
+      "price": "8000000",
+      "id": 3
+    },
+    {
+      "name": "Asus Zenbook 14",
+      "color": "Blue",
+      "price": "21000000",
+      "id": 4
+    },
+    {
+      "name": "infinix  HOT 11S NFC",
+      "color": "White",
+      "price": "2000000",
+      "id": 5
     }
   ],
   "bank": [

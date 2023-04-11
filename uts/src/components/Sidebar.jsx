@@ -18,17 +18,17 @@ export default function Sidebar() {
                 <i className="text-3xl fa-solid fa-list"></i>
               </Link>
             </li>
-            <li className="p-7">
-              <Link to='/banks' >
-                <i className="text-3xl fa-solid fa-building-columns"></i>
-              </Link>
-            </li>
+
             <li className="p-7">
               <Link to='/vehicles' >
                 <i className="text-3xl fa-solid fa-car"></i>
               </Link>
             </li>
-
+            <li className="p-7">
+              <Link to='/banks' >
+                <i className="text-3xl fa-solid fa-building-columns"></i>
+              </Link>
+            </li>
 
           </ul>
         </div>

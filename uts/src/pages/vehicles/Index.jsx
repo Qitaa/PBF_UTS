@@ -10,17 +10,17 @@ export default function VechicleIndex() {
   })
 
   const getVehicles = async () => {
-    let res = await axios.get('http://localhost:3001/kendaraan')
+    let res = await axios.get('http://localhost:3001/unit')
     setVehicles(res.data)
   }
   const handleModal = async (id) => {
     setModal(!modal)
-    let data = await axios.get(`http://localhost:3001/kendaraan/${id}`)
+    let data = await axios.get(`http://localhost:3001/unit/${id}`)
     setDataModal(data.data)
   }
   const handleDelete = async (id) => {
     try {
-      const del = await axios.delete(`http://localhost:3001/kendaraan/${id}`)
+      const del = await axios.delete(`http://localhost:3001/unit/${id}`)
       if (del.status === 200) {
         getVehicles()
         setModal(false)
@@ -36,7 +36,7 @@ export default function VechicleIndex() {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <p className="text-2xl">List Vehicles</p>
+        <p className="text-2xl">List Unit Ready</p>
         <Link to={'/vehiclesCreate'} className="bg-gray-200 btn btn-ghost"><i class="fa-solid fa-circle-plus mr-1"></i>Tambah</Link>
       </div>
       <div className="my-5 overflow-x-auto">
@@ -52,17 +52,17 @@ export default function VechicleIndex() {
           </thead>
           <tbody>
             {
-              vehicles.map((kendaraan, index) => {
+              vehicles.map((unit, index) => {
                 return (
                   <tr key={index}>
                     <th>{index + 1}</th>
-                    <td className='text-center'>{kendaraan.name}</td>
-                    <td className='text-center'>{kendaraan.color}</td>
-                    <td className='text-center'>Rp. {new Intl.NumberFormat().format(kendaraan.price)}</td>
+                    <td className='text-center'>{unit.name}</td>
+                    <td className='text-center'>{unit.color}</td>
+                    <td className='text-center'>Rp. {new Intl.NumberFormat().format(unit.price)}</td>
                     <td className='text-center'>
                       <div className="flex items-center justify-center gap-2">
-                        <Link to={'/vehicles/' + kendaraan.id} className="text-black bg-yellow-400 border-0 hover:bg-yellow-500 btn">Edit</Link>
-                        <button onClick={() => handleModal(kendaraan.id)} className="bg-red-500 border-0 hover:bg-red-600 btn ">Delete</button>
+                        <Link to={'/vehicles/' + unit.id} className="text-black bg-yellow-400 border-0 hover:bg-yellow-500 btn">Edit</Link>
+                        <button onClick={() => handleModal(unit.id)} className="bg-red-500 border-0 hover:bg-red-600 btn ">Delete</button>
                       </div>
                     </td>
                   </tr>
