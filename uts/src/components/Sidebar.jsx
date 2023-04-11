@@ -21,7 +21,7 @@ export default function Sidebar() {
 
             <li className="p-7">
               <Link to='/vehicles' >
-                <i className="text-3xl fa-solid fa-car"></i>
+                <i className="text-3xl fa-solid fa-shopping-bag"></i>
               </Link>
             </li>
             <li className="p-7">
