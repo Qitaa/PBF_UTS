@@ -1,0 +1,78 @@
+{
+  "brand": [
+    {
+      "id": 2,
+      "name": "Yamaha"
+    },
+    {
+      "id": 3,
+      "name": "Suzuki"
+    },
+    {
+      "name": "Testing",
+      "id": 4
+    },
+    {
+      "name": "fcvgbhnj",
+      "id": 5
+    },
+    {
+      "name": "23456789gh",
+      "id": 6
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Motor"
+    },
+    {
+      "id": 2,
+      "name": "Mobil"
+    },
+    {
+      "id": 3,
+      "name": "Truk"
+    }
+  ],
+  "kendaraan": [
+    {
+      "name": "tfegfdwg",
+      "color": "buji",
+      "price": "256789",
+      "id": 1
+    }
+  ],
+  "bank": [
+    {
+      "id": 1,
+      "name": "BCA",
+      "no_rek": "5555555"
+    },
+    {
+      "id": 2,
+      "name": "Mandiri",
+      "no_rek": "777777777"
+    },
+    {
+      "id": 3,
+      "name": "BNI",
+      "no_rek": "12121212212112"
+    },
+    {
+      "name": "BTPN/Jenius",
+      "no_rek": "84731717171",
+      "id": 5
+    },
+    {
+      "name": "OVO",
+      "no_rek": "081944885449",
+      "id": 6
+    },
+    {
+      "name": "DANA",
+      "no_rek": "081944885449",
+      "id": 7
+    }
+  ]
+}
